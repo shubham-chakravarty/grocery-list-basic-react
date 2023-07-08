@@ -1,15 +1,17 @@
-import React from 'react'
-import './Header.css'
-
 const Content = () => {
-  return (
-    <ul className='Header'>
-        <li>Carrot</li>
-        <li>Potato</li>
-        <li>Tomato</li>
-        <li>Onion</li>
-    </ul>
-  )
+    const handleNameChange = () => {
+        const names = ['Bob', 'Kevin', 'Dave'];
+        const int = Math.floor(Math.random() * 3);
+        return names[int];
+    }
+
+    return (
+        <main>
+            <p>
+                Hello {handleNameChange()}!
+            </p>
+        </main>
+    )
 }
 
 export default Content
